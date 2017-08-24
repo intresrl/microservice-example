@@ -1,0 +1,12 @@
+version: '2'
+services:
+  nginx:
+    image: "192.168.50.91:5000/color-converter-master:latest"
+    ports:
+      - 80:80
+  ui:
+    image: "192.168.50.91:5000/ui-master:latest"
+  rgb2hex:
+    image: "192.168.50.91:5000/rgb2hex-master:latest"
+  hsl2hex:
+    image: "192.168.50.91:5000/hsl2hex-master:latest"
